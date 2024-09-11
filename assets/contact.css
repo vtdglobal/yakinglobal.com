@@ -1,0 +1,280 @@
+#Contact .contactBanner {
+  width: 100%;
+  height: 360px;
+  position: relative;
+}
+#Contact .contactBanner::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0;
+  background: linear-gradient(0deg, rgba(23, 37, 50, 0.85), rgba(23, 37, 50, 0.85));
+  z-index: 9;
+}
+#Contact .contactBanner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#Contact .contactForm {
+  padding-bottom: 85px;
+  color: #FFF;
+  margin-top: -140px;
+  position: relative;
+  z-index: 9;
+}
+#Contact .contactForm .--content {
+  padding: 0 32px;
+}
+#Contact .contactForm .--content .--right {
+  padding-top: 100px;
+}
+@media (min-width: 1400px) {
+  #Contact .contactForm .--content .--right {
+    padding-left: 50px;
+  }
+}
+#Contact .contactForm .--content .--right h6 {
+  color: var(--color-yellow);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+}
+#Contact .contactForm .--content .--right h4 {
+  margin-bottom: 40px;
+}
+#Contact .contactForm .--content .--right .form .form-group {
+  margin-bottom: 20px;
+}
+#Contact .contactForm .--content .--right .form .form-group input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 0 10px 0 20px;
+  height: 44px;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.5);
+}
+#Contact .contactForm .--content .--right .form .form-group input:focus {
+  outline: none;
+}
+#Contact .contactForm .--content .--right .form .form-group input:focus-visible {
+  outline: none;
+}
+#Contact .contactForm .--content .--right .form .form-group input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#Contact .contactForm .--content .--right .form .form-group input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#Contact .contactForm .--content .--right .form .form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#Contact .contactForm .--content .--right .form .form-group label {
+  margin-bottom: 8px;
+}
+#Contact .contactForm .--content .--right .form .form-group textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px 20px;
+  height: 106px;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.5);
+}
+#Contact .contactForm .--content .--right .form .form-group textarea:focus {
+  outline: none;
+}
+#Contact .contactForm .--content .--right .form .form-group textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#Contact .contactForm .--content .--right .form .form-group textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#Contact .contactForm .--content .--right .form .form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#Contact .contactForm .--content .--right .form button {
+  margin-top: 40px;
+  border-radius: 6px;
+  border: none;
+  color: #FFF;
+  background: transparent;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Contact .contactForm .--content .--right .form button img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+#Contact .contactForm .--content .--right .form button:focus {
+  outline: none;
+}
+#Contact .contactForm .--content .--right .form button:focus-visible {
+  outline: none;
+}
+#Contact .contactForm .--content .--right .form button i {
+  margin-left: 0.7rem;
+  transform: perspective(0) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+#Contact .contactForm .--content .--right .form .wpcf7-form.invalid .wpcf7-response-output {
+  display: none;
+}
+#Contact .contactForm .--content .--right .form br {
+  display: none;
+}
+#Contact .contactForm .--content .--right .form .button-submit {
+  padding: 12px 20px;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+  background: var(--color-yellow);
+  color: #fff;
+  border: 1px solid transparent;
+  transform: translateX(5px);
+}
+#Contact .contactForm .--content .--right .form .button-submit:hover {
+  /* background: transparent;
+  color: var(--color-yellow);
+  border-color: var(--color-yellow); */
+}
+#Contact .contactForm .--content .--right .form .button-submit:hover i {
+  transform: translateX(5px);
+}
+#Contact .contactForm .--content .--left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#Contact .contactForm .--content .--left .--img {
+  width: 100%;
+}
+#Contact .contactForm .--content .--left .--img img {
+  width: 100%;
+}
+#Contact .contactForm .--content .--left .partent {
+  position: absolute;
+  top: 60%;
+  left: 16%;
+  width: 380px;
+}
+#Contact .contactForm .--content .--left .partent img {
+  width: 100%;
+}
+#Contact .contactForm .--content .--left .--txt {
+  position: absolute;
+  top: 8px;
+  left: 32px;
+  right: 8px;
+  bottom: 4px;
+  z-index: 9;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#Contact .contactForm .--content .--left .--txt .segTitle {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#Contact .contactForm .--content .--left .--txt article {
+  margin-bottom: 32px;
+  font-size: 16px;
+}
+#Contact .contactForm .--content .--left .--txt ul.--link {
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+  margin-bottom: 32px;
+}
+#Contact .contactForm .--content .--left .--txt ul.--link li {
+  margin-right: 0;
+  margin-bottom: 8px;
+}
+#Contact .contactForm .--content .--left .--txt ul.--link li:last-child {
+  margin-right: 0;
+}
+#Contact .contactForm .--content .--left .--txt ul.--link li a {
+  color: #FFF;
+  transition: all 0.5s ease;
+}
+#Contact .contactForm .--content .--left .--txt ul.--link li a span {
+  font-size: 12px;
+}
+#Contact .contactForm .--content .--left .--txt ul.--link li a:hover {
+  color: var(--color-yellow);
+}
+#Contact .contactForm .--content .--left .--txt ul.--link li a i {
+  width: 15px;
+  margin-right: 8px;
+}
+@media (max-width: 1400px) {
+  #Contact .contactForm .--content .--left h3 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 1280px) {
+  #Contact .contactForm .--content .--left h3 {
+    font-size: 30px;
+  }
+  #Contact .contactForm .--content .--left .--link,
+#Contact .contactForm .--content .--left article {
+    margin-bottom: 16px !important;
+    font-size: 13px;
+  }
+}
+@media (max-width: 992px) {
+  #Contact .contactForm .--content .--left h3 {
+    font-size: 25px;
+  }
+  #Contact .contactForm .--content .--left .--link {
+    margin-bottom: 0 !important;
+  }
+  #Contact .contactForm .--content .--left article {
+    margin-bottom: 8px !important;
+  }
+}
+@media (max-width: 768px) {
+  #Contact {
+    padding: 132px 0 32px;
+  }
+  #Contact .contactForm {
+    padding-bottom: 42px;
+  }
+  #Contact .contactForm .--content {
+    padding: 0;
+  }
+  #Contact .contactForm .--content .--right {
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+  #Contact .contactForm .--content .--left .--img {
+    display: none;
+  }
+  #Contact .contactForm .--content .--left .--txt {
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: none;
+  }
+  #Contact .contactForm .--content .--left .--txt .segTitle {
+    width: 100%;
+  }
+  #Contact .contactForm .--content .--left .--txt article {
+    width: 100%;
+  }
+  #Contact .contactForm .--content .--left .partent {
+    display: none;
+  }
+}/*# sourceMappingURL=Contact.css.map */
