@@ -3,3 +3,5 @@ google.com, pub-6485839283816071, DIRECT, f08c47fec0942fa0
 google.com, pub-5965765613398032, DIRECT, f08c47fec0942fa0
 === Admob 09 ===
 google.com, pub-3504127997348853, DIRECT, f08c47fec0942fa0
+=== Admob 234 ===
+google.com, pub-5334128810479688, DIRECT, f08c47fec0942fa0
