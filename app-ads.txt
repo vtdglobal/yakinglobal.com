@@ -6,3 +6,5 @@ facebook.com, 158062881538703, DIRECT, c3e20eee3f780d68
 google.com, pub-3504127997348853, DIRECT, f08c47fec0942fa0
 === Admob 234 ===
 google.com, pub-5334128810479688, DIRECT, f08c47fec0942fa0
+
+facebook.com, 1672941479948950, DIRECT, c3e20eee3f780d68
