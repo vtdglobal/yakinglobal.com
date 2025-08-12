@@ -12,3 +12,5 @@ facebook.com, 1672941479948950, DIRECT, c3e20eee3f780d68
 
 google.com, pub-7117777112918698, DIRECT, f08c47fec0942fa0
 
+google.com, pub-3504127997348853, DIRECT, f08c47fec0942fa0
+
