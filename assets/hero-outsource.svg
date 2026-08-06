@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" fill="none">
+  <!-- glow -->
+  <circle cx="330" cy="240" r="200" fill="#0f8aff" opacity="0.07"/>
+  <circle cx="330" cy="240" r="140" fill="#0f8aff" opacity="0.06"/>
+
+  <!-- main browser window -->
+  <g>
+    <rect x="120" y="90" width="360" height="250" rx="14" fill="#111f36" stroke="#2a4a74" stroke-width="2"/>
+    <rect x="120" y="90" width="360" height="42" rx="14" fill="#182b49"/>
+    <rect x="120" y="118" width="360" height="14" fill="#182b49"/>
+    <circle cx="146" cy="111" r="6" fill="#ff5f57"/>
+    <circle cx="166" cy="111" r="6" fill="#febc2e"/>
+    <circle cx="186" cy="111" r="6" fill="#28c840"/>
+    <rect x="210" y="102" width="180" height="18" rx="9" fill="#0d1a2e"/>
+    <rect x="222" y="108" width="90" height="6" rx="3" fill="#2a4a74"/>
+
+    <!-- code lines -->
+    <rect x="145" y="152" width="30" height="10" rx="5" fill="#0f8aff"/>
+    <rect x="183" y="152" width="90" height="10" rx="5" fill="#2a4a74"/>
+    <rect x="160" y="174" width="55" height="10" rx="5" fill="#9b7bff"/>
+    <rect x="223" y="174" width="70" height="10" rx="5" fill="#2a4a74"/>
+    <rect x="160" y="196" width="110" height="10" rx="5" fill="#28c840" opacity="0.75"/>
+    <rect x="278" y="196" width="40" height="10" rx="5" fill="#2a4a74"/>
+    <rect x="160" y="218" width="40" height="10" rx="5" fill="#febc2e" opacity="0.85"/>
+    <rect x="208" y="218" width="85" height="10" rx="5" fill="#2a4a74"/>
+    <rect x="145" y="240" width="30" height="10" rx="5" fill="#0f8aff"/>
+
+    <!-- chart panel inside window -->
+    <rect x="330" y="150" width="128" height="105" rx="10" fill="#0d1a2e" stroke="#2a4a74"/>
+    <polyline points="344,232 368,208 388,218 412,186 444,170" stroke="#0f8aff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="444" cy="170" r="5" fill="#0f8aff"/>
+    <rect x="344" y="164" width="52" height="8" rx="4" fill="#2a4a74"/>
+
+    <!-- progress bars -->
+    <rect x="145" y="278" width="200" height="12" rx="6" fill="#0d1a2e"/>
+    <rect x="145" y="278" width="150" height="12" rx="6" fill="#0f8aff"/>
+    <rect x="145" y="302" width="200" height="12" rx="6" fill="#0d1a2e"/>
+    <rect x="145" y="302" width="96" height="12" rx="6" fill="#9b7bff"/>
+    <g>
+      <rect x="370" y="278" width="88" height="36" rx="8" fill="#0f8aff"/>
+      <rect x="384" y="291" width="60" height="10" rx="5" fill="#dcecff"/>
+    </g>
+  </g>
+
+  <!-- design / palette card -->
+  <g>
+    <rect x="62" y="220" width="120" height="150" rx="12" fill="#182b49" stroke="#2a4a74" stroke-width="2"/>
+    <circle cx="98" cy="258" r="18" fill="#9b7bff"/>
+    <circle cx="98" cy="258" r="18" fill="none" stroke="#0d1a2e" stroke-width="3" stroke-dasharray="8 6"/>
+    <rect x="126" y="246" width="42" height="8" rx="4" fill="#2a4a74"/>
+    <rect x="126" y="262" width="30" height="8" rx="4" fill="#2a4a74"/>
+    <rect x="80" y="292" width="84" height="8" rx="4" fill="#2a4a74"/>
+    <rect x="80" y="310" width="60" height="8" rx="4" fill="#2a4a74"/>
+    <rect x="80" y="334" width="40" height="16" rx="8" fill="#0f8aff"/>
+    <rect x="128" y="334" width="36" height="16" rx="8" fill="none" stroke="#0f8aff" stroke-width="2"/>
+  </g>
+
+  <!-- small phone (app - side business) -->
+  <g>
+    <rect x="452" y="250" width="92" height="160" rx="16" fill="#182b49" stroke="#2a4a74" stroke-width="2"/>
+    <rect x="482" y="262" width="32" height="6" rx="3" fill="#0d1a2e"/>
+    <rect x="466" y="282" width="64" height="34" rx="8" fill="#0f8aff" opacity="0.85"/>
+    <rect x="466" y="324" width="64" height="10" rx="5" fill="#2a4a74"/>
+    <rect x="466" y="342" width="44" height="10" rx="5" fill="#2a4a74"/>
+    <circle cx="498" cy="386" r="12" fill="none" stroke="#2a4a74" stroke-width="3"/>
+  </g>
+
+  <!-- gear + brackets accents -->
+  <g fill="#9b7bff">
+    <path d="M520 120 l10 0 2 -10 10 -2 5 -9 -6 -8 6 -8 -5 -9 -10 -2 -2 -10 -10 0 -2 10 -10 2 -5 9 6 8 -6 8 5 9 10 2z" opacity="0.9" transform="translate(0,20)"/>
+  </g>
+  <circle cx="525" cy="112" r="9" fill="#0e1c30"/>
+  <text x="80" y="150" font-family="monospace" font-size="44" font-weight="bold" fill="#0f8aff" opacity="0.9">&lt;/&gt;</text>
+  <text x="490" y="220" font-family="monospace" font-size="30" font-weight="bold" fill="#9b7bff" opacity="0.8">{ }</text>
+
+  <!-- dots -->
+  <g fill="#0f8aff" opacity="0.5">
+    <circle cx="100" cy="80" r="4"/><circle cx="560" cy="300" r="4"/><circle cx="90" cy="400" r="4"/>
+    <circle cx="580" cy="160" r="3"/><circle cx="300" cy="380" r="3"/><circle cx="520" cy="440" r="3"/>
+  </g>
+</svg>

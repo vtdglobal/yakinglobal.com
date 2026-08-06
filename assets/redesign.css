@@ -1,0 +1,900 @@
+/* ============================================
+   YAKIN GLOBAL — REDESIGN CSS
+   Dark Professional Theme
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* ---- Hero ---- */
+.yk-hero {
+  background: #172532;
+  padding: 140px 0 80px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.yk-hero__tag {
+  display: inline-block;
+  background: rgba(15,138,255,0.15);
+  color: #0f8aff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 100px;
+  margin-bottom: 28px;
+}
+
+.yk-hero__title {
+  font-size: 3.6rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #fff;
+  margin-bottom: 24px;
+  letter-spacing: -0.5px;
+}
+
+.yk-hero__title span {
+  color: #0f8aff;
+}
+
+.yk-hero__desc {
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.7;
+  max-width: 560px;
+  margin-bottom: 40px;
+}
+
+.yk-hero__actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.yk-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none !important;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.yk-btn--primary {
+  background: #0f8aff;
+  color: #fff !important;
+}
+
+.yk-btn--primary:hover {
+  background: #0b6ecc;
+  transform: translateY(-2px);
+}
+
+.yk-btn--outline {
+  background: transparent;
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+.yk-btn--outline:hover {
+  border-color: #0f8aff;
+  color: #0f8aff !important;
+}
+
+.yk-hero__stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 64px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.yk-stat__num {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #0f8aff;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.yk-stat__label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(255,255,255,0.45);
+  font-weight: 500;
+}
+
+/* ---- Sections ---- */
+.yk-section {
+  padding: 90px 0;
+}
+
+.yk-section--dark {
+  background: #172532;
+}
+
+.yk-section--darker {
+  background: #0f1e2b;
+}
+
+.yk-section-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #0f8aff;
+  margin-bottom: 14px;
+}
+
+.yk-section-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  letter-spacing: -0.3px;
+}
+
+.yk-section-desc {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.7;
+  max-width: 620px;
+}
+
+/* ---- Service Cards ---- */
+.yk-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 36px 32px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.yk-card:hover {
+  background: rgba(15,138,255,0.07);
+  border-color: rgba(15,138,255,0.3);
+  transform: translateY(-4px);
+}
+
+.yk-card__icon {
+  width: 52px;
+  height: 52px;
+  background: rgba(15,138,255,0.12);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f8aff;
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+.yk-card__title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.yk-card__desc {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.yk-card__badge {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.06);
+  padding: 4px 12px;
+  border-radius: 100px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ---- Why Us ---- */
+.yk-why-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 576px) {
+  .yk-why-row { grid-template-columns: 1fr; }
+}
+
+.yk-why-item {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.03);
+}
+
+.yk-why-item__icon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  background: rgba(15,138,255,0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f8aff;
+  font-size: 18px;
+}
+
+.yk-why-item__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.yk-why-item__desc {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ---- Process ---- */
+.yk-process {
+  display: flex;
+  gap: 0;
+  position: relative;
+}
+
+.yk-process::before {
+  content: '';
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  right: 32px;
+  height: 1px;
+  background: rgba(255,255,255,0.08);
+}
+
+.yk-process-item {
+  flex: 1;
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.yk-process-item__num {
+  width: 64px;
+  height: 64px;
+  background: #0f1e2b;
+  border: 2px solid rgba(15,138,255,0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #0f8aff;
+  margin: 0 auto 20px;
+}
+
+.yk-process-item__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.yk-process-item__desc {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  .yk-process {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .yk-process::before { display: none; }
+}
+
+/* ---- Tech Stack ---- */
+.yk-tech-track-wrapper {
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.yk-tech-track {
+  display: flex;
+  gap: 12px;
+  width: max-content;
+  animation: yk-scroll 30s linear infinite;
+}
+
+.yk-tech-tag {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.7);
+  white-space: nowrap;
+}
+
+@keyframes yk-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* ---- Works Table ---- */
+.yk-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 48px;
+}
+
+.yk-table thead th {
+  background: rgba(15,138,255,0.1);
+  color: #0f8aff;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 14px 20px;
+  text-align: left;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.yk-table tbody th {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 14px 20px;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.02);
+}
+
+.yk-table tbody td {
+  color: rgba(255,255,255,0.6);
+  font-size: 14px;
+  padding: 14px 20px;
+  border: 1px solid rgba(255,255,255,0.06);
+  line-height: 1.6;
+}
+
+.yk-table tbody tr:hover td,
+.yk-table tbody tr:hover th {
+  background: rgba(15,138,255,0.04);
+}
+
+.yk-table-section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+  margin-top: 48px;
+  padding-left: 14px;
+  border-left: 3px solid #0f8aff;
+}
+
+/* ---- CTA ---- */
+.yk-cta {
+  background: linear-gradient(135deg, #0f1e2b 0%, #172532 100%);
+  border: 1px solid rgba(15,138,255,0.2);
+  border-radius: 16px;
+  padding: 70px 60px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 860px;
+}
+
+.yk-cta__title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.yk-cta__desc {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 36px;
+  line-height: 1.7;
+}
+
+/* ---- Spec List ---- */
+.yk-spec-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.yk-spec-list > li {
+  margin-bottom: 36px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.yk-spec-list > li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.yk-spec-list__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.yk-spec-list__title .num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: rgba(15,138,255,0.15);
+  color: #0f8aff;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.yk-spec-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+.yk-spec-list ul li {
+  color: rgba(255,255,255,0.55);
+  font-size: 0.95rem;
+  padding: 5px 0 5px 20px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.yk-spec-list ul li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: rgba(15,138,255,0.5);
+  font-size: 12px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 991px) {
+  .yk-hero__title { font-size: 2.8rem; }
+}
+
+@media (max-width: 767px) {
+  .yk-hero { padding: 120px 0 60px; }
+  .yk-hero__title { font-size: 2.2rem; }
+  .yk-hero__stats { gap: 24px; flex-wrap: wrap; }
+  .yk-section { padding: 70px 0; }
+  .yk-section-title { font-size: 1.8rem; }
+  .yk-cta { padding: 40px 24px; }
+  .yk-cta__title { font-size: 1.6rem; }
+}
+
+/* ============================================
+   HEADER REDESIGN
+   ============================================ */
+
+.header {
+  position: fixed !important;
+  width: 100% !important;
+  top: 0 !important;
+  z-index: 999 !important;
+  transition: all 0.4s ease !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  border-bottom: 1px solid transparent !important;
+}
+
+.header .top {
+  display: none !important;
+}
+
+.header.change {
+  background: rgba(15, 25, 38, 0.92) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+  padding: 0 !important;
+}
+
+.header .container,
+.header .row {
+  width: 100%;
+}
+
+.header .left .logo {
+  margin-left: 0 !important;
+  padding: 14px 0 !important;
+}
+
+.header .left .logo img {
+  height: 44px !important;
+}
+
+.header .center ul {
+  display: flex !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 4px !important;
+}
+
+.header .center ul li {
+  padding: 0 !important;
+}
+
+.header .center ul li a {
+  color: rgba(255,255,255,0.85) !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  padding: 8px 16px !important;
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+  text-decoration: none !important;
+  display: block;
+  letter-spacing: 0.2px;
+}
+
+.header .center ul li a:hover,
+.header .center ul li.current-menu-item a {
+  color: #fff !important;
+  background: rgba(255,255,255,0.1) !important;
+}
+
+.header .right a.btnTheme_color,
+.header .right a.header_quote {
+  background: #0f8aff !important;
+  color: #fff !important;
+  padding: 9px 22px !important;
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+  white-space: nowrap;
+}
+
+.header .right a.btnTheme_color:hover,
+.header .right a.header_quote:hover {
+  background: #0b6ecc !important;
+}
+
+/* ============================================
+   HERO FULL-WIDTH IMAGE WITH OVERLAY
+   ============================================ */
+
+.yk-hero {
+  position: relative !important;
+  padding: 0 !important;
+  border-bottom: none !important;
+  background: none !important;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.yk-hero__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('./hero-team.png');
+  background-size: cover;
+  background-position: center top;
+  z-index: 0;
+}
+
+.yk-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    rgba(10, 18, 28, 0.92) 0%,
+    rgba(15, 30, 48, 0.78) 50%,
+    rgba(15, 30, 48, 0.40) 100%
+  );
+  z-index: 1;
+}
+
+.yk-hero__inner {
+  position: relative;
+  z-index: 2;
+  padding: 160px 0 100px;
+}
+
+.yk-hero__tag {
+  display: inline-block;
+  background: rgba(15,138,255,0.2);
+  color: #5bb4ff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 100px;
+  margin-bottom: 28px;
+  border: 1px solid rgba(15,138,255,0.3);
+}
+
+.yk-hero__title {
+  font-size: 4rem !important;
+  font-weight: 800 !important;
+  line-height: 1.1 !important;
+  color: #fff !important;
+  margin-bottom: 24px !important;
+  letter-spacing: -1px !important;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+.yk-hero__title span {
+  color: #5bb4ff !important;
+}
+
+.yk-hero__desc {
+  font-size: 1.15rem !important;
+  color: rgba(255,255,255,0.75) !important;
+  line-height: 1.75 !important;
+  max-width: 580px !important;
+  margin-bottom: 40px !important;
+}
+
+.yk-hero__stats {
+  margin-top: 64px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+@media (max-width: 991px) {
+  .yk-hero__title { font-size: 2.8rem !important; }
+  .yk-hero__inner { padding: 130px 0 80px; }
+}
+
+@media (max-width: 767px) {
+  .yk-hero__title { font-size: 2.2rem !important; letter-spacing: -0.5px !important; }
+  .yk-hero__inner { padding: 110px 0 60px; }
+  .yk-hero { min-height: auto; }
+}
+
+/* ---- Static Tech Tags Grid ---- */
+.yk-tags-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.yk-tags-grid .yk-tech-tag {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.75);
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.yk-tags-grid .yk-tech-tag:hover {
+  background: rgba(15,138,255,0.12);
+  border-color: rgba(15,138,255,0.35);
+  color: #fff;
+}
+
+/* ---- Section alignment consistency ---- */
+/* Section label always uppercase blue */
+.yk-section-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #0f8aff;
+  margin-bottom: 12px;
+}
+
+/* When centered */
+.text-center .yk-section-label { text-align: center; }
+.text-center .yk-section-title { text-align: center; }
+.text-center .yk-section-desc { text-align: center; }
+
+/* ============================================
+   INNER PAGES — Shared Page Banner
+   ============================================ */
+
+/* Force dark background on all pages */
+body {
+  background-color: #0f1e2b !important;
+}
+
+/* Page Banner — replaces old banners */
+.yk-page-banner {
+  position: relative;
+  padding: 140px 0 70px;
+  background: #172532;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.yk-page-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 60% 50%, rgba(15,138,255,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.yk-page-banner__label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #0f8aff;
+  margin-bottom: 14px;
+}
+
+.yk-page-banner__title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+.yk-page-banner__desc {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.6);
+  max-width: 560px;
+  line-height: 1.7;
+}
+
+.yk-page-banner__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 20px;
+}
+
+.yk-page-banner__breadcrumb a {
+  color: rgba(255,255,255,0.5) !important;
+  text-decoration: none !important;
+  transition: color 0.2s;
+}
+
+.yk-page-banner__breadcrumb a:hover {
+  color: #0f8aff !important;
+}
+
+.yk-page-banner__breadcrumb span {
+  color: #0f8aff;
+}
+
+/* Override old page-specific background colours */
+#about, #Contact, #rec,
+.about_us, .contactForm, .career,
+.about_vision, .contactBanner, .topRec {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Section content on inner pages */
+.yk-inner-section {
+  padding: 80px 0;
+  background: #0f1e2b;
+}
+
+.yk-inner-section--alt {
+  padding: 80px 0;
+  background: #172532;
+}
+
+/* Fix text colours for inner page content */
+#about h2, #about h3, #about h4,
+#Contact h2, #Contact h3, #Contact h4,
+#rec h2, #rec h3, #rec h4 {
+  color: #fff !important;
+}
+
+#about p, #about li,
+#Contact p, #Contact li,
+#rec p, #rec li {
+  color: rgba(255,255,255,0.7) !important;
+}
+
+/* Fix form styling on contact/career */
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm textarea,
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form textarea,
+select {
+  background: rgba(255,255,255,0.06) !important;
+  border: 1px solid rgba(255,255,255,0.12) !important;
+  color: #fff !important;
+  border-radius: 6px !important;
+  padding: 12px 16px !important;
+}
+
+.contactForm input::placeholder,
+.wpcf7-form input::placeholder,
+.wpcf7-form textarea::placeholder {
+  color: rgba(255,255,255,0.35) !important;
+}
+
+/* Fix old banner images — hide them, use CSS banner instead */
+.banner_about .video img,
+.contactBanner img {
+  display: none !important;
+}
+
+.banner_about,
+.contactBanner {
+  display: none !important;
+}
+
+/* Career page topRec fix */
+.topRec .segTitle h2,
+.topRec .--txt h1,
+.topRec .--txt h2,
+.topRec .--txt p {
+  color: #fff !important;
+}
+
+/* Fix card/item backgrounds on inner pages */
+.history_about .right .item,
+.list_lead_about .item {
+  background: rgba(255,255,255,0.04) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  border-radius: 10px !important;
+}
+
+.history_about .right .item.active,
+.history_about .right .item:hover {
+  border-color: rgba(15,138,255,0.4) !important;
+  background: rgba(15,138,255,0.06) !important;
+}
+
+@media (max-width: 767px) {
+  .yk-page-banner { padding: 120px 0 50px; }
+  .yk-page-banner__title { font-size: 2.2rem; }
+}

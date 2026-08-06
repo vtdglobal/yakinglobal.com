@@ -280,7 +280,7 @@ body {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   z-index: 999;
@@ -1264,3 +1264,13 @@ body {
   color: var(--color-yellow);
 }
 
+
+/* Header quote button (replaces Google Play badge) */
+.header .right a.header_quote {
+  display: inline-block;
+  padding: 10px 24px;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 6px;
+}
