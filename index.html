@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Yakin Global — Offshore Development Services</title>
+   <title data-i18n="title">Yakin Global — Offshore Development Services</title>
    <meta name="description"
       content="Yakin Global provides offshore development, frontend coding, web applications, and business management systems with a focus on quality and Agile/Scrum.">
    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
@@ -19,6 +19,34 @@
    <!-- Google Fonts -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+   <!-- Language toggle button styling -->
+   <style>
+      .lang-toggle-btn {
+         display: inline-flex;
+         align-items: center;
+         gap: 6px;
+         padding: 8px 16px;
+         font-size: 0.85rem;
+         font-weight: 600;
+         color: var(--text-main);
+         background-color: transparent;
+         border: 1px solid var(--border-color);
+         border-radius: 20px;
+         cursor: pointer;
+         white-space: nowrap;
+         transition: all 0.2s ease;
+      }
+
+      .lang-toggle-btn:hover {
+         border-color: var(--primary);
+         color: var(--primary);
+      }
+
+      .lang-toggle-btn .fa-globe {
+         font-size: 0.85rem;
+      }
+   </style>
 </head>
 
 <body>
@@ -30,16 +58,23 @@
             <img src="./assets/logo.webp" alt="Yakin Global" style="height: 45px;">
          </a>
          <ul class="nav-menu">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">Our Team</a></li>
-            <li><a href="#services">Specialty</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" class="active" data-i18n="nav.home">Home</a></li>
+            <li><a href="#about" data-i18n="nav.about">Our Team</a></li>
+            <li><a href="#services" data-i18n="nav.services">Specialty</a></li>
+            <li><a href="#works" data-i18n="nav.works">Works</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
          </ul>
-         <a href="#contact" class="btn-primary d-none d-lg-inline-flex">Discuss Your Project</a>
-         <!-- Mobile Menu Toggle -->
-         <div id="menu-toggle" class="d-lg-none fs-4" style="color: #FFFFFF; cursor: pointer;"><i
-               class="fa-solid fa-bars"></i></div>
+         <div class="d-flex align-items-center gap-3">
+            <!-- Language Toggle -->
+            <button type="button" id="lang-toggle" class="lang-toggle-btn" aria-label="Switch to English">
+               <i class="fa-solid fa-globe"></i>
+               <span id="lang-toggle-label">EN</span>
+            </button>
+            <a href="#contact" class="btn-primary d-none d-lg-inline-flex" data-i18n="nav.cta">Discuss Your Project</a>
+            <!-- Mobile Menu Toggle -->
+            <div id="menu-toggle" class="d-lg-none fs-4" style="color: #FFFFFF; cursor: pointer;"><i
+                  class="fa-solid fa-bars"></i></div>
+         </div>
       </div>
    </nav>
 
@@ -48,17 +83,17 @@
       <div class="container">
          <div class="row align-items-center">
             <div class="col-lg-7 hero-content">
-               <span class="hero-tag">Offshore Development Services</span>
-               <h1 class="hero-title">
+               <span class="hero-tag" data-i18n="hero.tag">Offshore Development Services</span>
+               <h1 class="hero-title" data-i18n="hero.title">
                   Providing the Right Development Team for Your Organization.
                </h1>
-               <p class="hero-desc">
+               <p class="hero-desc" data-i18n="hero.desc">
                   Our service goes beyond simple offshore development. We focus on building and providing the most
                   suitable, high-quality development teams to integrate seamlessly with your business.
                </p>
                <div class="d-flex gap-3 flex-wrap">
-                  <a href="#contact" class="btn-primary">Schedule a Consultation</a>
-                  <a href="#services" class="btn-outline">Explore Our Specialties</a>
+                  <a href="#contact" class="btn-primary" data-i18n="hero.cta1">Schedule a Consultation</a>
+                  <a href="#services" class="btn-outline" data-i18n="hero.cta2">Explore Our Specialties</a>
                </div>
             </div>
          </div>
@@ -66,25 +101,25 @@
    </section>
 
    <!-- ==================== STATS BAR ==================== -->
-  
+
 
    <!-- ==================== ABOUT (BRIEF) ==================== -->
    <section id="about" class="section reveal about-corporate">
       <div class="container">
          <div class="about-content">
-            <span class="hero-tag">Original Team</span>
-            <h2 class="sec-title">Our Mindset & Framework</h2>
-            <p>
+            <span class="hero-tag" data-i18n="about.tag">Original Team</span>
+            <h2 class="sec-title" data-i18n="about.title">Our Mindset & Framework</h2>
+            <p data-i18n="about.p1">
                <strong>Mindset:</strong> Many of our employees have studied or trained internationally, giving us a deep
                understanding of global corporate culture, mindset, and workflows. We strive to meet the highest
                standards for quality and delivery deadlines.
             </p>
-            <p>
+            <p data-i18n="about.p2">
                <strong>Agile & Scrum Development:</strong> We utilize Scrum as our team's core framework. This ensures
                safe quality and cost management, reduces communication overhead for our clients, and allows for rapid
                team improvement with highly visible productivity growth.
             </p>
-            <a href="#contact" class="btn-primary mt-3">Learn More About Us</a>
+            <a href="#contact" class="btn-primary mt-3" data-i18n="about.cta">Learn More About Us</a>
          </div>
       </div>
    </section>
@@ -93,57 +128,57 @@
    <section id="services" class="section section-bg-light reveal">
       <div class="container">
          <div class="text-center mb-5">
-            <span class="hero-tag">Specialty</span>
-            <h2 class="sec-title">Our Areas of Expertise</h2>
-            <p class="sec-desc">We deliver high-quality coding, applications, and business systems.</p>
+            <span class="hero-tag" data-i18n="services.tag">Specialty</span>
+            <h2 class="sec-title" data-i18n="services.title">Our Areas of Expertise</h2>
+            <p class="sec-desc" data-i18n="services.desc">We deliver high-quality coding, applications, and business systems.</p>
          </div>
 
          <div class="row">
             <div class="col-lg-4 col-md-6 mb-4">
                <div class="service-card">
                   <div class="service-icon"><i class="fa-solid fa-code"></i></div>
-                  <h3 class="service-title">Frontend Coding</h3>
-                  <p class="text-muted mb-0">HTML/CSS/JS/WP. We deliver pixel-perfect coding from your design data,
+                  <h3 class="service-title" data-i18n="service1.title">Frontend Coding</h3>
+                  <p class="text-muted mb-0" data-i18n="service1.desc">HTML/CSS/JS/WP. We deliver pixel-perfect coding from your design data,
                      supporting both PC and mobile responsive layouts, alongside WordPress integration.</p>
                </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
                <div class="service-card">
                   <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
-                  <h3 class="service-title">Web App Development</h3>
-                  <p class="text-muted mb-0">Development using various PHP and Ruby frameworks. We are capable of
+                  <h3 class="service-title" data-i18n="service2.title">Web App Development</h3>
+                  <p class="text-muted mb-0" data-i18n="service2.desc">Development using various PHP and Ruby frameworks. We are capable of
                      handling everything from basic architecture to detailed system design.</p>
                </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
                <div class="service-card">
                   <div class="service-icon"><i class="fa-solid fa-briefcase"></i></div>
-                  <h3 class="service-title">Business Management Systems</h3>
-                  <p class="text-muted mb-0">Extensive know-how in international business standards. We cover basic to
+                  <h3 class="service-title" data-i18n="service3.title">Business Management Systems</h3>
+                  <p class="text-muted mb-0" data-i18n="service3.desc">Extensive know-how in international business standards. We cover basic to
                      detailed design, as well as unit and integration testing execution.</p>
                </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
                <div class="service-card">
                   <div class="service-icon"><i class="fa-solid fa-mobile-alt"></i></div>
-                  <h3 class="service-title">Mobile App Development</h3>
-                  <p class="text-muted mb-0">High-performance native and cross-platform mobile applications for iOS and
+                  <h3 class="service-title" data-i18n="service4.title">Mobile App Development</h3>
+                  <p class="text-muted mb-0" data-i18n="service4.desc">High-performance native and cross-platform mobile applications for iOS and
                      Android tailored to your business needs.</p>
                </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
                <div class="service-card">
                   <div class="service-icon"><i class="fa-brands fa-wordpress"></i></div>
-                  <h3 class="service-title">CMS & WordPress</h3>
-                  <p class="text-muted mb-0">Seamless integration of HTML source code into WordPress, including custom
+                  <h3 class="service-title" data-i18n="service5.title">CMS & WordPress</h3>
+                  <p class="text-muted mb-0" data-i18n="service5.desc">Seamless integration of HTML source code into WordPress, including custom
                      plugin development and bespoke theme creation.</p>
                </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
                <div class="service-card">
                   <div class="service-icon"><i class="fa-solid fa-database"></i></div>
-                  <h3 class="service-title">Enterprise Databases</h3>
-                  <p class="text-muted mb-0">Strong expertise in database management and development using Oracle
+                  <h3 class="service-title" data-i18n="service6.title">Enterprise Databases</h3>
+                  <p class="text-muted mb-0" data-i18n="service6.desc">Strong expertise in database management and development using Oracle
                      (PL/SQL), MS SQL Server, and other robust relational databases.</p>
                </div>
             </div>
@@ -155,9 +190,9 @@
    <section id="works" class="section reveal">
       <div class="container">
          <div class="text-center mb-5">
-            <span class="hero-tag">Works</span>
-            <h2 class="sec-title">What We Build</h2>
-            <p class="sec-desc">A diverse portfolio of business systems, web applications, and frontend implementations.
+            <span class="hero-tag" data-i18n="works.tag">Works</span>
+            <h2 class="sec-title" data-i18n="works.title">What We Build</h2>
+            <p class="sec-desc" data-i18n="works.desc">A diverse portfolio of business systems, web applications, and frontend implementations.
             </p>
          </div>
 
@@ -165,32 +200,32 @@
             <div class="process-item">
                <div class="process-num">01</div>
                <div class="process-content">
-                  <h3 class="process-title">Medical Management Systems</h3>
-                  <p class="text-muted mb-0">Developed robust systems for clinics and hospitals using .NET (VB/ASP, WIN
+                  <h3 class="process-title" data-i18n="process1.title">Medical Management Systems</h3>
+                  <p class="text-muted mb-0" data-i18n="process1.desc">Developed robust systems for clinics and hospitals using .NET (VB/ASP, WIN
                      FORM) and Oracle (PL/SQL).</p>
                </div>
             </div>
             <div class="process-item">
                <div class="process-num">02</div>
                <div class="process-content">
-                  <h3 class="process-title">Sales & ERP Systems</h3>
-                  <p class="text-muted mb-0">Built ordering, purchasing, and billing systems using .NET (C# - WEB FORM)
+                  <h3 class="process-title" data-i18n="process2.title">Sales & ERP Systems</h3>
+                  <p class="text-muted mb-0" data-i18n="process2.desc">Built ordering, purchasing, and billing systems using .NET (C# - WEB FORM)
                      and MS SQL SERVER.</p>
                </div>
             </div>
             <div class="process-item">
                <div class="process-num">03</div>
                <div class="process-content">
-                  <h3 class="process-title">PHP / Laravel / RoR Apps</h3>
-                  <p class="text-muted mb-0">Delivered automated reporting apps, corporate evaluation systems, salon
+                  <h3 class="process-title" data-i18n="process3.title">PHP / Laravel / RoR Apps</h3>
+                  <p class="text-muted mb-0" data-i18n="process3.desc">Delivered automated reporting apps, corporate evaluation systems, salon
                      management, and event registration platforms.</p>
                </div>
             </div>
             <div class="process-item">
                <div class="process-num">04</div>
                <div class="process-content">
-                  <h3 class="process-title">Frontend Engineering</h3>
-                  <p class="text-muted mb-0">Executed complex JS implementations, HTML modularization, and WordPress
+                  <h3 class="process-title" data-i18n="process4.title">Frontend Engineering</h3>
+                  <p class="text-muted mb-0" data-i18n="process4.desc">Executed complex JS implementations, HTML modularization, and WordPress
                      theme creations for numerous domestic sites.</p>
                </div>
             </div>
@@ -205,16 +240,16 @@
             style="background-color: var(--bg-main); border-radius: 8px; border: 1px solid var(--border-color); overflow: hidden; box-shadow: var(--shadow-sm);">
 
             <div class="col-lg-5 p-5" style="background-color: var(--bg-gray);">
-               <span class="hero-tag" style="color: var(--text-muted);">Get In Touch</span>
-               <h2 class="mb-4">Start Your Project Today</h2>
-               <p style="margin-bottom: 40px;">Fill out the form to discuss your IT offshore development needs. We will
+               <span class="hero-tag" style="color: var(--text-muted);" data-i18n="contact.tag">Get In Touch</span>
+               <h2 class="mb-4" data-i18n="contact.title">Start Your Project Today</h2>
+               <p style="margin-bottom: 40px;" data-i18n="contact.desc">Fill out the form to discuss your IT offshore development needs. We will
                   respond promptly to your inquiry.</p>
 
                <div class="d-flex flex-column gap-4">
                   <div class="d-flex align-items-center gap-3">
                      <i class="fa-solid fa-envelope fs-4" style="color: var(--primary);"></i>
                      <div>
-                        <div style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;">Email Us
+                        <div style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;" data-i18n="contact.emailLabel">Email Us
                         </div>
                         <a href="mailto:ssstore@yakinglobal.com" class="fw-bold"
                            style="color: #FFFFFF;">ssstore@yakinglobal.com</a>
@@ -223,7 +258,7 @@
                   <div class="d-flex align-items-center gap-3">
                      <i class="fa-solid fa-phone fs-4" style="color: var(--primary);"></i>
                      <div>
-                        <div style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;">Call Us
+                        <div style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;" data-i18n="contact.callLabel">Call Us
                         </div>
                         <a href="tel:+84886990804" class="fw-bold" style="color: #FFFFFF;">+84 886 990 804</a>
                      </div>
@@ -231,46 +266,46 @@
                   <div class="d-flex align-items-center gap-3">
                      <i class="fa-solid fa-location-dot fs-4" style="color: var(--primary);"></i>
                      <div>
-                        <div style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;">Office
+                        <div style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;" data-i18n="contact.officeLabel">Office
                         </div>
-                        <span class="fw-bold" style="color: #FFFFFF;">Hanoi, Vietnam</span>
+                        <span class="fw-bold" style="color: #FFFFFF;" data-i18n="contact.officeValue">Hanoi, Vietnam</span>
                      </div>
                   </div>
                </div>
             </div>
 
             <div class="col-lg-7 p-5">
-               <h3 class="mb-4">Inquiry Form</h3>
+               <h3 class="mb-4" data-i18n="contact.formTitle">Inquiry Form</h3>
                <form action="#" method="post">
                   <div class="row">
                      <div class="col-md-6 mb-4">
-                        <label class="form-label text-muted fw-semibold" style="font-size: 0.9rem;">Company Name
+                        <label class="form-label text-muted fw-semibold" style="font-size: 0.9rem;" data-i18n="form.companyLabel">Company Name
                            *</label>
-                        <input type="text" class="form-control-corporate" placeholder="Your Company" required>
+                        <input type="text" class="form-control-corporate" placeholder="Your Company" data-i18n-placeholder="form.companyPlaceholder" required>
                      </div>
                      <div class="col-md-6 mb-4">
-                        <label class="form-label text-muted fw-semibold" style="font-size: 0.9rem;">Your Name *</label>
-                        <input type="text" class="form-control-corporate" placeholder="John Doe" required>
+                        <label class="form-label text-muted fw-semibold" style="font-size: 0.9rem;" data-i18n="form.nameLabel">Your Name *</label>
+                        <input type="text" class="form-control-corporate" placeholder="John Doe" data-i18n-placeholder="form.namePlaceholder" required>
                      </div>
                   </div>
                   <div class="row">
                      <div class="col-md-6 mb-4">
-                        <label class="form-label text-muted fw-semibold" style="font-size: 0.9rem;">Email Address
+                        <label class="form-label text-muted fw-semibold" style="font-size: 0.9rem;" data-i18n="form.emailLabel">Email Address
                            *</label>
                         <input type="email" class="form-control-corporate" placeholder="john@company.com" required>
                      </div>
                      <div class="col-md-6 mb-4">
-                        <label class="form-label text-muted fw-semibold" style="font-size: 0.9rem;">Phone Number</label>
-                        <input type="text" class="form-control-corporate" placeholder="+1 234 567 890">
+                        <label class="form-label text-muted fw-semibold" style="font-size: 0.9rem;" data-i18n="form.phoneLabel">Phone Number</label>
+                        <input type="text" class="form-control-corporate" placeholder="+1 234 567 890" data-i18n-placeholder="form.phonePlaceholder">
                      </div>
                   </div>
                   <div class="mb-4">
-                     <label class="form-label text-muted fw-semibold" style="font-size: 0.9rem;">Inquiry Details
+                     <label class="form-label text-muted fw-semibold" style="font-size: 0.9rem;" data-i18n="form.detailsLabel">Inquiry Details
                         *</label>
                      <textarea class="form-control-corporate" rows="5" placeholder="Tell us about your requirements..."
-                        required></textarea>
+                        data-i18n-placeholder="form.detailsPlaceholder" required></textarea>
                   </div>
-                  <button type="submit" class="btn-primary w-100 py-3 fs-5">Proceed to Confirmation</button>
+                  <button type="submit" class="btn-primary w-100 py-3 fs-5" data-i18n="form.submit">Proceed to Confirmation</button>
                </form>
             </div>
 
@@ -284,7 +319,7 @@
          <div class="row">
             <div class="col-lg-6 mb-5 mb-lg-0">
                <img src="./assets/logo.webp" alt="Yakin Global" style="height: 45px; margin-bottom: 24px;">
-               <p class="text-muted pe-lg-5">
+               <p class="text-muted pe-lg-5" data-i18n="footer.desc">
                   Yakin Global is a premium offshore development partner based in Vietnam. We provide frontend coding,
                   web applications, and business systems with a strong emphasis on Agile and Scrum frameworks.
                </p>
@@ -296,18 +331,18 @@
             </div>
 
             <div class="col-lg-6">
-               <h5>Stay Updated</h5>
-               <p class="text-muted mb-3">Subscribe to our newsletter for the latest tech insights and company updates.
+               <h5 data-i18n="footer.updated">Stay Updated</h5>
+               <p class="text-muted mb-3" data-i18n="footer.subscribeDesc">Subscribe to our newsletter for the latest tech insights and company updates.
                </p>
                <form action="#" class="subscribe-form">
-                  <input type="email" class="form-control-corporate" placeholder="Corporate Email Address" required>
-                  <button type="submit" class="btn-primary">Subscribe</button>
+                  <input type="email" class="form-control-corporate" placeholder="Corporate Email Address" data-i18n-placeholder="footer.subscribePlaceholder" required>
+                  <button type="submit" class="btn-primary" data-i18n="footer.subscribeBtn">Subscribe</button>
                </form>
             </div>
          </div>
 
          <div class="footer-bottom text-center">
-            <p class="text-muted mb-0">&copy; 2026 Yakin Global. All rights reserved.</p>
+            <p class="text-muted mb-0" data-i18n="footer.copyright">&copy; 2026 Yakin Global. All rights reserved.</p>
          </div>
       </div>
    </footer>
@@ -367,6 +402,203 @@
       }
       window.addEventListener("scroll", reveal);
       reveal(); // Trigger on load
+
+      // ==================== LANGUAGE TOGGLE (EN <-> 日本語) ====================
+      const translations = {
+         en: {
+            title: "Yakin Global — Offshore Development Services",
+            metaDescription: "Yakin Global provides offshore development, frontend coding, web applications, and business management systems with a focus on quality and Agile/Scrum.",
+            "nav.home": "Home",
+            "nav.about": "Our Team",
+            "nav.services": "Specialty",
+            "nav.works": "Works",
+            "nav.contact": "Contact",
+            "nav.cta": "Discuss Your Project",
+            "hero.tag": "Offshore Development Services",
+            "hero.title": "Providing the Right Development Team for Your Organization.",
+            "hero.desc": "Our service goes beyond simple offshore development. We focus on building and providing the most suitable, high-quality development teams to integrate seamlessly with your business.",
+            "hero.cta1": "Schedule a Consultation",
+            "hero.cta2": "Explore Our Specialties",
+            "about.tag": "Original Team",
+            "about.title": "Our Mindset & Framework",
+            "about.p1": "<strong>Mindset:</strong> Many of our employees have studied or trained internationally, giving us a deep understanding of global corporate culture, mindset, and workflows. We strive to meet the highest standards for quality and delivery deadlines.",
+            "about.p2": "<strong>Agile & Scrum Development:</strong> We utilize Scrum as our team's core framework. This ensures safe quality and cost management, reduces communication overhead for our clients, and allows for rapid team improvement with highly visible productivity growth.",
+            "about.cta": "Learn More About Us",
+            "services.tag": "Specialty",
+            "services.title": "Our Areas of Expertise",
+            "services.desc": "We deliver high-quality coding, applications, and business systems.",
+            "service1.title": "Frontend Coding",
+            "service1.desc": "HTML/CSS/JS/WP. We deliver pixel-perfect coding from your design data, supporting both PC and mobile responsive layouts, alongside WordPress integration.",
+            "service2.title": "Web App Development",
+            "service2.desc": "Development using various PHP and Ruby frameworks. We are capable of handling everything from basic architecture to detailed system design.",
+            "service3.title": "Business Management Systems",
+            "service3.desc": "Extensive know-how in international business standards. We cover basic to detailed design, as well as unit and integration testing execution.",
+            "service4.title": "Mobile App Development",
+            "service4.desc": "High-performance native and cross-platform mobile applications for iOS and Android tailored to your business needs.",
+            "service5.title": "CMS & WordPress",
+            "service5.desc": "Seamless integration of HTML source code into WordPress, including custom plugin development and bespoke theme creation.",
+            "service6.title": "Enterprise Databases",
+            "service6.desc": "Strong expertise in database management and development using Oracle (PL/SQL), MS SQL Server, and other robust relational databases.",
+            "works.tag": "Works",
+            "works.title": "What We Build",
+            "works.desc": "A diverse portfolio of business systems, web applications, and frontend implementations.",
+            "process1.title": "Medical Management Systems",
+            "process1.desc": "Developed robust systems for clinics and hospitals using .NET (VB/ASP, WIN FORM) and Oracle (PL/SQL).",
+            "process2.title": "Sales & ERP Systems",
+            "process2.desc": "Built ordering, purchasing, and billing systems using .NET (C# - WEB FORM) and MS SQL SERVER.",
+            "process3.title": "PHP / Laravel / RoR Apps",
+            "process3.desc": "Delivered automated reporting apps, corporate evaluation systems, salon management, and event registration platforms.",
+            "process4.title": "Frontend Engineering",
+            "process4.desc": "Executed complex JS implementations, HTML modularization, and WordPress theme creations for numerous domestic sites.",
+            "contact.tag": "Get In Touch",
+            "contact.title": "Start Your Project Today",
+            "contact.desc": "Fill out the form to discuss your IT offshore development needs. We will respond promptly to your inquiry.",
+            "contact.emailLabel": "Email Us",
+            "contact.callLabel": "Call Us",
+            "contact.officeLabel": "Office",
+            "contact.officeValue": "Hanoi, Vietnam",
+            "contact.formTitle": "Inquiry Form",
+            "form.companyLabel": "Company Name *",
+            "form.companyPlaceholder": "Your Company",
+            "form.nameLabel": "Your Name *",
+            "form.namePlaceholder": "John Doe",
+            "form.emailLabel": "Email Address *",
+            "form.phoneLabel": "Phone Number",
+            "form.phonePlaceholder": "+1 234 567 890",
+            "form.detailsLabel": "Inquiry Details *",
+            "form.detailsPlaceholder": "Tell us about your requirements...",
+            "form.submit": "Proceed to Confirmation",
+            "footer.desc": "Yakin Global is a premium offshore development partner based in Vietnam. We provide frontend coding, web applications, and business systems with a strong emphasis on Agile and Scrum frameworks.",
+            "footer.updated": "Stay Updated",
+            "footer.subscribeDesc": "Subscribe to our newsletter for the latest tech insights and company updates.",
+            "footer.subscribePlaceholder": "Corporate Email Address",
+            "footer.subscribeBtn": "Subscribe",
+            "footer.copyright": "&copy; 2026 Yakin Global. All rights reserved."
+         },
+         ja: {
+            title: "Yakin Global ― オフショア開発サービス",
+            metaDescription: "Yakin Globalは、品質とアジャイル/スクラムを重視したオフショア開発、フロントエンドコーディング、Webアプリケーション、業務管理システムをご提供します。",
+            "nav.home": "ホーム",
+            "nav.about": "チーム紹介",
+            "nav.services": "専門分野",
+            "nav.works": "実績",
+            "nav.contact": "お問い合わせ",
+            "nav.cta": "プロジェクトのご相談",
+            "hero.tag": "オフショア開発サービス",
+            "hero.title": "貴社に最適な開発チームをご提供します。",
+            "hero.desc": "私たちのサービスは、単なるオフショア開発にとどまりません。貴社のビジネスにシームレスに統合できる、最適で高品質な開発チームの構築とご提供に注力しています。",
+            "hero.cta1": "無料相談を予約する",
+            "hero.cta2": "専門分野を見る",
+            "about.tag": "自社チーム",
+            "about.title": "私たちの考え方と開発フレームワーク",
+            "about.p1": "<strong>マインドセット：</strong>当社の従業員の多くは海外での留学・研修経験があり、グローバルな企業文化や働き方への深い理解を持っています。品質と納期において、常に最高水準を目指しています。",
+            "about.p2": "<strong>アジャイル・スクラム開発：</strong>当チームはスクラムを中核とした開発フレームワークを採用しています。これにより、品質とコストを確実に管理し、お客様とのコミュニケーション負荷を軽減するとともに、チームの継続的な改善と生産性向上を実現します。",
+            "about.cta": "私たちについてもっと詳しく",
+            "services.tag": "専門分野",
+            "services.title": "私たちの得意分野",
+            "services.desc": "高品質なコーディング、アプリケーション、業務システムをご提供します。",
+            "service1.title": "フロントエンドコーディング",
+            "service1.desc": "HTML/CSS/JS/WordPress。デザインデータからピクセルパーフェクトなコーディングをご提供し、PC・モバイル対応のレスポンシブレイアウトやWordPress連携にも対応します。",
+            "service2.title": "Webアプリケーション開発",
+            "service2.desc": "PHPやRubyの各種フレームワークを用いた開発。基本設計から詳細設計まで幅広く対応可能です。",
+            "service3.title": "業務管理システム",
+            "service3.desc": "国際的なビジネス標準に関する豊富なノウハウを保有。基本設計から詳細設計、単体・結合テストの実施まで対応します。",
+            "service4.title": "モバイルアプリ開発",
+            "service4.desc": "貴社のビジネスニーズに合わせた、iOS・Android向けの高性能なネイティブ／クロスプラットフォームアプリを開発します。",
+            "service5.title": "CMS・WordPress",
+            "service5.desc": "HTMLソースコードのWordPressへのシームレスな統合、カスタムプラグイン開発やオリジナルテーマ制作にも対応します。",
+            "service6.title": "企業向けデータベース",
+            "service6.desc": "Oracle（PL/SQL）、MS SQL Serverなど、堅牢なリレーショナルデータベースの管理・開発に関する高い専門性を有しています。",
+            "works.tag": "実績",
+            "works.title": "私たちが手がけるもの",
+            "works.desc": "業務システム、Webアプリケーション、フロントエンド実装まで、幅広い実績をご紹介します。",
+            "process1.title": "医療管理システム",
+            "process1.desc": ".NET（VB/ASP、WIN FORM）とOracle（PL/SQL）を用いて、クリニックや病院向けの堅牢なシステムを開発しました。",
+            "process2.title": "販売・ERPシステム",
+            "process2.desc": ".NET（C# - WEB FORM）とMS SQL SERVERを用いて、受発注・購買・請求システムを構築しました。",
+            "process3.title": "PHP／Laravel／RoRアプリ",
+            "process3.desc": "自動レポート作成アプリ、企業評価システム、サロン管理システム、イベント登録プラットフォームなどを提供しました。",
+            "process4.title": "フロントエンドエンジニアリング",
+            "process4.desc": "複雑なJS実装、HTMLのモジュール化、国内多数サイト向けのWordPressテーマ制作を手がけました。",
+            "contact.tag": "お問い合わせ",
+            "contact.title": "プロジェクトを今すぐ始めましょう",
+            "contact.desc": "ITオフショア開発に関するご要望は、フォームよりお気軽にご相談ください。迅速にご対応いたします。",
+            "contact.emailLabel": "メールでのお問い合わせ",
+            "contact.callLabel": "お電話でのお問い合わせ",
+            "contact.officeLabel": "オフィス所在地",
+            "contact.officeValue": "ベトナム・ハノイ",
+            "contact.formTitle": "お問い合わせフォーム",
+            "form.companyLabel": "会社名 *",
+            "form.companyPlaceholder": "貴社名を入力",
+            "form.nameLabel": "お名前 *",
+            "form.namePlaceholder": "山田 太郎",
+            "form.emailLabel": "メールアドレス *",
+            "form.phoneLabel": "電話番号",
+            "form.phonePlaceholder": "+81 90 1234 5678",
+            "form.detailsLabel": "お問い合わせ内容 *",
+            "form.detailsPlaceholder": "ご要望をご記入ください...",
+            "form.submit": "確認画面へ進む",
+            "footer.desc": "Yakin Globalは、ベトナムを拠点とするプレミアムなオフショア開発パートナーです。アジャイル・スクラム開発を強みとし、フロントエンドコーディング、Webアプリケーション、業務システムをご提供しています。",
+            "footer.updated": "最新情報を受け取る",
+            "footer.subscribeDesc": "最新の技術情報や会社の最新情報をニュースレターでお届けします。",
+            "footer.subscribePlaceholder": "会社のメールアドレス",
+            "footer.subscribeBtn": "登録する",
+            "footer.copyright": "&copy; 2026 Yakin Global. 無断複製・転載を禁じます。"
+         }
+      };
+
+      const langToggleBtn = document.getElementById('lang-toggle');
+      const langToggleLabel = document.getElementById('lang-toggle-label');
+      const metaDescriptionTag = document.querySelector('meta[name="description"]');
+      const STORAGE_KEY = 'yakin-lang';
+
+      function applyLanguage(lang) {
+         document.querySelectorAll('[data-i18n]').forEach((el) => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[lang] && translations[lang][key] !== undefined) {
+               el.innerHTML = translations[lang][key];
+            }
+         });
+
+         document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
+            const key = el.getAttribute('data-i18n-placeholder');
+            if (translations[lang] && translations[lang][key] !== undefined) {
+               el.setAttribute('placeholder', translations[lang][key]);
+            }
+         });
+
+         document.documentElement.setAttribute('lang', lang === 'ja' ? 'ja' : 'en');
+         if (metaDescriptionTag && translations[lang].metaDescription) {
+            metaDescriptionTag.setAttribute('content', translations[lang].metaDescription);
+         }
+
+         langToggleLabel.textContent = lang === 'ja' ? 'EN' : '日本語';
+         langToggleBtn.setAttribute('aria-label', lang === 'ja' ? 'Switch to English' : 'Switch to Japanese');
+         langToggleBtn.setAttribute('data-current-lang', lang);
+
+         try {
+            localStorage.setItem(STORAGE_KEY, lang);
+         } catch (e) {
+            /* localStorage unavailable — ignore, language just won't persist across reloads */
+         }
+      }
+
+      langToggleBtn.addEventListener('click', () => {
+         const current = langToggleBtn.getAttribute('data-current-lang') || 'en';
+         applyLanguage(current === 'en' ? 'ja' : 'en');
+      });
+
+      // Restore saved preference on load (defaults to Japanese)
+      let initialLang = 'ja';
+      try {
+         const saved = localStorage.getItem(STORAGE_KEY);
+         if (saved === 'ja' || saved === 'en') {
+            initialLang = saved;
+         }
+      } catch (e) {
+         /* localStorage unavailable — default to Japanese */
+      }
+      applyLanguage(initialLang);
    </script>
 </body>
 
